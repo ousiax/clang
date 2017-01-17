@@ -25,12 +25,14 @@ int main(int argc, char *argv[])
         s = -s;
         modi = s * 4.0 / (i * j * k);
         pi = pi + modi;
-//        printf("%.10f %.10f %d %d %d\n", pi, modi, i, j, k);
+#if 0
+        printf("%.10f %.10f %d %d %d\n", pi, modi, i, j, k);
         if(c > 1000000 && pi > 3.14159267)
         {
             printf(".....\nc = %d, pi = %.20f\n", c, pi);
             break;
         }
+#endif
         i = k;
         j = k + 1;
         k = j + 1;
