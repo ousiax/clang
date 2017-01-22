@@ -5,7 +5,7 @@
 // pi = 3 + 4/(2*3*4) - 4/(4*5*6) + 4/(6*7*8) + 4/(8*9*10) - ...
 int main(int argc, char *argv[])
 {
-    if(argc != 2)
+    if (argc != 2)
     {
         printf("An integer number required!\n");
         exit(1);
@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
     long n = atol(argv[1]);
     long c = 0;
 
-    while(c <= n)
+    while (c <= n)
     {
         s = -s;
         modi = s * 4.0 / (i * j * k);
         pi = pi + modi;
 #if 0
         printf("%.10f %.10f %d %d %d\n", pi, modi, i, j, k);
-        if(c > 1000000 && pi > 3.14159267)
+        if (c > 1000000 && pi > 3.14159267)
         {
             printf(".....\nc = %d, pi = %.20f\n", c, pi);
             break;
