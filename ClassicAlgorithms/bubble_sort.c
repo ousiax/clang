@@ -3,7 +3,7 @@
 
 #define SIZE 10
 
-void print(int[] , int );
+static void print(int[] , int );
 
 int main()
 {
@@ -40,7 +40,7 @@ int main()
     exit(0);
 }
 
-void print(int arr[], int size)
+static void print(int arr[], int size)
 {
     int i;
     for (i = 0; i < size; i++)

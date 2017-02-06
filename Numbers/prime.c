@@ -4,7 +4,7 @@
 
 typedef enum { true = 1, false = 0} bool;
 
-bool is_prime(int);
+static bool is_prime(int);
 
 int main(int argc, char *argv[])
 {
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     exit(0);
 }
 
-bool is_prime(int n)
+static bool is_prime(int n)
 {
     float r;
     int i;

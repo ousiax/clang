@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fibonacci(int n);
+static int fibonacci(int);
 
 int main(int argc, char *argv[])
 {
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     exit(0);
 }
 
-int fibonacci(int n)
+static int fibonacci(int n)
 {
     if (n == 0)
     {
