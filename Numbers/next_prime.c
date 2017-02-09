@@ -10,18 +10,14 @@ int main()
 {
     int n;
 
-    while (true)
-    {
+    while (true) {
         printf("Next number (0 for exit): ");
         scanf("%d", &n);
-        if (n == 0)
-        {
+        if (n == 0) {
             exit(0);
         }
-        while (true)
-        {
-            if (is_prime(n) == true)
-            {
+        while (true) {
+            if (is_prime(n) == true) {
                 printf("%d\n", n);
                 break;
             }
@@ -41,10 +37,8 @@ static bool is_prime(int n)
 
     r = sqrtf((float)n);
 
-    for (i = 2; i <= r; i++)
-    {
-        if (n % i == 0)
-        {
+    for (i = 2; i <= r; i++) {
+        if (n % i == 0) {
             return false;
             break;
         }
