@@ -22,14 +22,12 @@ int main(int argc, char *argv[])
 
     print_prime(atoi(argv[1]));
     printf("\n");
-
     exit(0);
 }
 
 static void print_prime(long int n)
 {
     int i, j, count;
-
     // create a boolean array whose indices represent the numbers.
     bool *prime = malloc(n + 1);
 
@@ -43,6 +41,7 @@ static void print_prime(long int n)
     // which is faster than calculating square root.
     for(i = 2; i * i <= n; i++) {
         count = 0;
+
         // in the second loop we eliminate all multiples of i
         // from being a prime. e.g, if i = 2, we know that 4, 6, 8, 10 ...
         // will not be prime, hence we change the bool array to false for
